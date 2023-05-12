@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/blogpost.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+
+    <title>Blog - X</title>
+  </head>
+  <body>
+    <nav class="navigation max-width-1 m-auto my-2">
+      <div class="nav-left">
+        <span>BLOG-X</span>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <form action="/search.html" method="get">
+          <input
+            class="form-input"
+            type="text"
+            name="query"
+            placeholder="Search for blogs"
+          />
+          <button class="btn">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="max-width-1 m-auto"><hr /></div>
+    <!-- <div class="post-img">
+      <img src="img/11.svg" alt="" />
+    </div> -->
+    <div class="content max-width-1 m-auto my-2 content-blog">
+      <div class="content-left">
+        <h1>A stage for blooming bloggers</h1>
+
+        <div class="blogpost-meta">
+          <div class="author-info">
+            <div><b>By Agniva</b></div>
+            <div>04 Jan | 6min read</div>
+          </div>
+          <div class="social">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+            >
+              <path
+                d="M 21.125 0 L 4.875 0 C 2.183594 0 0 2.183594 0 4.875 L 0 21.125 C 0 23.816406 2.183594 26 4.875 26 L 21.125 26 C 23.816406 26 26 23.816406 26 21.125 L 26 4.875 C 26 2.183594 23.816406 0 21.125 0 Z M 8.039063 22.070313 L 4 22.070313 L 3.976563 9.976563 L 8.015625 9.976563 Z M 5.917969 8.394531 L 5.894531 8.394531 C 4.574219 8.394531 3.722656 7.484375 3.722656 6.351563 C 3.722656 5.191406 4.601563 4.3125 5.945313 4.3125 C 7.289063 4.3125 8.113281 5.191406 8.140625 6.351563 C 8.140625 7.484375 7.285156 8.394531 5.917969 8.394531 Z M 22.042969 22.070313 L 17.96875 22.070313 L 17.96875 15.5 C 17.96875 13.910156 17.546875 12.828125 16.125 12.828125 C 15.039063 12.828125 14.453125 13.558594 14.171875 14.265625 C 14.066406 14.519531 14.039063 14.867188 14.039063 15.222656 L 14.039063 22.070313 L 9.945313 22.070313 L 9.921875 9.976563 L 14.015625 9.976563 L 14.039063 11.683594 C 14.5625 10.875 15.433594 9.730469 17.519531 9.730469 C 20.105469 9.730469 22.039063 11.417969 22.039063 15.046875 L 22.039063 22.070313 Z"
+              ></path>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299 c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032 c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051 c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165 c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20 C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636 C20.514,6.135,21.699,4.943,22,3.999z"
+              ></path>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+
+        <br />
+        <p>
+          In communications and information processing, code is a system of
+          rules to convert information—such as a letter, word, sound, image, or
+          gesture—into another form, sometimes shortened or secret, for
+          communication through a communication channel or storage in a storage
+          medium. An early example is an invention of language, which enabled a
+          person, through speech, to communicate what they thought, saw, heard,
+          or felt to others. But speech limits the range of communication to the
+          distance a voice can carry and limits the audience to those present
+          when the speech is uttered. The invention of writing, which converted
+          spoken language into visual symbols, extended the range of
+          communication across space and time. The process of encoding converts
+          information from a source into symbols for communication or storage.
+          Decoding is the reverse process, converting code symbols back into a
+          form that the recipient understands, such as English or/and Spanish.
+          One reason for coding is to enable communication in places where
+          ordinary plain language, spoken or written, is difficult or
+          impossible. For example, semaphore, where the configuration of flags
+          held by a signaler or the arms of a semaphore tower encodes parts of
+          the message, typically individual letters, and numbers. Another person
+          standing a great distance away can interpret the flags and reproduce
+          the words sent.
+        </p>
+      </div>
+      <div class="content-right">
+        <img src="img/13.jpg" alt="Blog-X" />
+      </div>
+    </div>
+    <div class="max-width-1 m-auto"><hr /></div>
+    <div class="home-articles max-width-1 m-auto font1">
+      People who read this article also read
+      <div class="row">
+        <div class="home-article more-post center">
+          <div class="home-article-image">
+            <img src="img/3.png" alt="article" />
+          </div>
+
+          <div class="home-article-content font2">
+            <a href="/blogpost.html"><h3>Lorem ipsum dolor sit</h3></a>
+            <div>Author Name</div>
+            <span>07 Jan | 6 min read</span>
+          </div>
+        </div>
+        <div class="home-article more-post center">
+          <div class="home-article-image">
+            <img src="img/1.png" alt="article" />
+          </div>
+
+          <div class="home-article-content font2">
+            <a href="/blogpost.html"><h3>Lorem ipsum dolor sit</h3></a>
+            <div>Author Name</div>
+            <span>07 Jan | 6 min read</span>
+          </div>
+        </div>
+        <div class="home-article more-post center">
+          <div class="home-article-image">
+            <img src="img/2.png" alt="article" />
+          </div>
+
+          <div class="home-article-content font2">
+            <a href="/blogpost.html"><h3>Lorem ipsum dolor sit</h3></a>
+            <div>Author Name</div>
+            <span>07 Jan | 6 min read</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer m-auto">
+      <p>Copyright &copy; Blog-X.com</p>
+      <a href="https://www.vecteezy.com/browse">Vector Credits: Vecteezy</a>
+    </div>
+  </body>
+</html>
